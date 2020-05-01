@@ -1,0 +1,47 @@
+!!! 5
+  body
+    // Navigation
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+      .container
+        a.navbar-brand(href='#') Work heroes
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='#')
+                | Menu Principal
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='#') A propos
+            li.nav-item
+              a.nav-link(href='#') Contactez nous
+    // Page Content
+    .container
+      .cards-list
+        .card.1
+          .card_image
+            img(src='https://i.redd.it/b3esnz5ra34y.jpg')
+          .card_title
+            p Fullstack developer 
+        .card.2
+          .card_image
+            img(src='https://cdn.blackmilkclothing.com/media/wysiwyg/Wallpapers/PhoneWallpapers_FloralCoral.jpg')
+          .card_title
+            p IOS engineer
+        .card.3
+          .card_image
+            img(src='https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif')
+          .card_title
+            p Frontend developer
+        .card.4
+          .card_image
+            img(src='https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif')
+          .card_title
+            p Embbeded systems engineer
+    footer.py-5.bg-dark
+      .container
+        p.m-0.text-center.text-white Copyright © Work heroes
+    script(type='text/javascript', src='app.js')
+    script(src='vendor\jquery\jquery.min.js')
+    script(src='vendor\bootstrap\js\bootstrap.bundle.min.js')
